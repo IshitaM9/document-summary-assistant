@@ -1,4 +1,4 @@
-const API_BASE = "http://127.0.0.1:8000";
+const API_BASE = "https://document-summary-assistant-1-6h5x.onrender.com";
 
 export async function extractDocument(file) {
   const formData = new FormData();
