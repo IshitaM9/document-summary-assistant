@@ -1,0 +1,164 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, Arial, sans-serif;
+  background: #f5f7fb;
+  color: #1f2937;
+}
+
+button,
+select {
+  font: inherit;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+.header {
+  text-align: center;
+  padding: 55px 20px 35px;
+  background: white;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 36px;
+  color: #111827;
+}
+
+.header p {
+  margin-top: 12px;
+  color: #6b7280;
+  font-size: 16px;
+}
+
+.container {
+  width: min(900px, 92%);
+  margin: 35px auto 60px;
+}
+
+.upload-box {
+  background: white;
+  border: 2px dashed #cbd5e1;
+  border-radius: 18px;
+  padding: 50px 25px;
+  text-align: center;
+}
+
+.upload-box h2 {
+  margin-top: 0;
+}
+
+.upload-box p {
+  color: #6b7280;
+}
+
+.upload-button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 12px 22px;
+  background: #2563eb;
+  color: white;
+  border-radius: 9px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.upload-button:hover {
+  background: #1d4ed8;
+}
+
+.filename {
+  margin-top: 20px;
+}
+
+.section {
+  margin-top: 28px;
+}
+
+.section h2 {
+  margin-bottom: 12px;
+  font-size: 21px;
+}
+
+.text-box,
+.summary-box {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 22px;
+  line-height: 1.7;
+  white-space: pre-wrap;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.04);
+}
+
+.text-box {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.summary-controls {
+  display: flex;
+  gap: 12px;
+}
+
+.summary-controls select {
+  padding: 11px 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background: white;
+}
+
+.summary-controls button {
+  padding: 11px 18px;
+  border: none;
+  border-radius: 8px;
+  background: #111827;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.summary-controls button:hover {
+  background: #374151;
+}
+
+.loading {
+  margin-top: 20px;
+  padding: 15px;
+  background: #eff6ff;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.error {
+  margin-top: 20px;
+  padding: 15px;
+  background: #fef2f2;
+  color: #b91c1c;
+  border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+  .header h1 {
+    font-size: 28px;
+  }
+
+  .container {
+    width: 94%;
+  }
+
+  .summary-controls {
+    flex-direction: column;
+  }
+
+  .summary-controls button,
+  .summary-controls select {
+    width: 100%;
+  }
+}
